@@ -9,3 +9,72 @@ body{
     font-family: "DM Sans", sans-serif;
 }
 
+.animated{
+    transform-origin: center;
+    animation: animation1 2s ease-out infinite;
+}
+
+@keyframes animation1 {
+    0% { transform: translateX(-50%) scale(.7); }
+    50% { transform: translateX(-50%) scale(1.2); }
+    100% { transform: translateX(-50%) scale(.7); }
+}
+
+.width-animated{
+    animation: width-anni 3s cubic-bezier(0.32, 0, 0.67, 0) 0s 1 forwards;
+}
+@keyframes width-anni {
+	0% {
+        transform: translateX(-20%);
+        width: 0;
+	}
+    50% {
+        width: 100%;
+    }
+	100% {
+        transform: translateX(400%);
+		width: 0;
+	}
+}
+
+.circle-opacity{
+    animation: cy-opacity 3s cubic-bezier(0.32, 0, 0.67, 0) 0s 1 forwards;
+}
+@keyframes cy-opacity {
+	0% {
+        opacity: .1;
+	}
+    30% {
+        opacity: .2;
+    }
+    50% {
+        width: .5;
+    }
+    60% {
+        opacity: .8;
+    }
+	100% {
+        opacity: 1;
+	}
+}
+
+
+/* Pricing Plan */
+.pricing-plan ul li{
+    padding-left: 30px;
+    position: relative;
+}
+.pricing-plan ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15%;
+    transform: translateX(-15%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #E81C2E;
+}
+
+
+
