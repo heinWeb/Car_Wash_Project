@@ -21,7 +21,7 @@ body{
 }
 
 .width-animated{
-    animation: width-anni 3s cubic-bezier(0.32, 0, 0.67, 0) 0s 1 forwards;
+    animation: width-anni 3s ease-out 0s 1 forwards;
 }
 @keyframes width-anni {
 	0% {
@@ -32,8 +32,8 @@ body{
         width: 100%;
     }
 	100% {
-        transform: translateX(400%);
-		width: 0;
+        transform: translateX(100%);
+		width: 100%;
 	}
 }
 
@@ -51,7 +51,7 @@ body{
         width: .5;
     }
     60% {
-        opacity: .8;
+        opacity: .6;
     }
 	100% {
         opacity: 1;
@@ -76,5 +76,54 @@ body{
     background-color: #E81C2E;
 }
 
+/* Button Hover */
+.tran-before::before,
+.tran-before2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 999px;
+    width: 100%;
+    height: 100%;
+    background-color: #E81C2E;
+    transition: transform .5s ease;
+}
+.tran-before:hover::before,
+.tran-before2:hover::before{
+    transform: translateY(-100%);
+}
+.tran-before p,
+.tran-before2 p{
+    transition: color .5s ease;
+}
+.tran-before:hover p{
+    color: black;
+}
+.tran-before2:hover p{
+    color: white;
+}
 
-
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: #18171A;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+input[type="checkbox"]:checked{
+    background-color: #e71a17;
+    border-color: #e71a17;
+}
+input[type="checkbox"]:checked::after{
+    content: '✓';
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}

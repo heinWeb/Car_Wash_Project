@@ -12,14 +12,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="pb-52">
+<body>
   <!-- Header & Banner -->
   <div class="bg-cover bg-center min-h-[127vh] w-full" style="
         background-image: url(https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/67443d553e60455fc80989b0_bg-p-1600.webp);
         background-position-x: -2px;
       ">
     <!-- Header -->
-    <header class="flex items-center w-full justify-between px-4 py-2 border-b border-[#3C4247] text-white">
+    <header
+      class="flex items-center w-full justify-between px-4 py-2 border-b border-[#3C4247] text-white relative z-50">
       <div>
         <img src="https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/674056c158226318691fcd45_logo%20two.svg"
           alt="Logo" class="w-[240px]" />
@@ -37,8 +38,9 @@
           <path fill="currentColor"
             d="M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
         </svg>
-        <button class="font-medium text-[1rem] text-neutral-50 uppercase bg-[#E81C2E] px-[20px] py-[15px] rounded-full">
-          Contact Us
+        <button
+          class="tran-before relative overflow-hidden font-medium text-[1rem] text-neutral-50 uppercase bg-white px-[20px] py-[15px] rounded-full">
+          <p class="relative z-50">Contact Us</p>
         </button>
       </div>
     </header>
@@ -52,8 +54,9 @@
       <h1 class="text-white capitalize text-[4.5rem] leading-[80px] w-[80%] pb-10 font-semibold">
         sparkles on wheels is every car wash
       </h1>
-      <button class="font-medium text-[1rem] text-neutral-50 uppercase bg-[#E81C2E] px-[20px] py-[15px] rounded-full">
-        Contact Us
+      <button
+        class="tran-before relative overflow-hidden font-medium text-[1rem] text-neutral-50 uppercase bg-white px-[20px] py-[15px] rounded-full">
+        <p class="relative z-50">Contact Us</p>
       </button>
       <div
         class="bg-[#E81C2E] w-[120px] h-[120px] grid place-items-center justify-center rounded-full absolute left-[50%] translate-x-[-50%] bottom-[-80px] border-[4px] border-[white]">
@@ -129,8 +132,9 @@
             </p>
           </div>
         </div>
-        <button class="font-medium text-[1rem] text-neutral-50 uppercase bg-[#E81C2E] px-[20px] py-[15px] rounded-full">
-          Read More
+        <button
+          class="tran-before2 relative overflow-hidden font-medium text-[1rem] text-neutral-50 uppercase bg-black px-[20px] py-[15px] rounded-full">
+          <p class="relative z-50">Read More</p>
         </button>
       </div>
     </div>
@@ -609,11 +613,12 @@
       </h1>
     </div>
     <div class="flex gap-8 relative">
-      <div class="w-[35%] rounded-lg relative">
+      <div class="w-[35%] h-min rounded-lg relative">
         <img class="rounded-lg"
           src="https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/672f1c4064b2e15ea72d5af9_image%20(4).png"
           alt="">
-        <div class="w-[70px] h-[70px] flex justify-center items-center rounded-full bg-[#E81C2E] text-white absolute left-1/2 translate-x-[-50%] bottom-[25px]">
+        <div
+          class="w-[70px] h-[70px] flex justify-center items-center rounded-full bg-[#E81C2E] text-white absolute left-1/2 translate-x-[-50%] bottom-[25px]">
           <i class="fa-solid fa-quote-left text-5xl"></i>
         </div>
       </div>
@@ -682,6 +687,230 @@
     </div>
   </section>
 
+  <!-- Blog & Update -->
+  <section class="px-4 mt-32 bg-[#F2F2F2] pt-32 pb-24">
+    <div>
+      <p class="text-[#E81C2E] text-[1.2rem] capitalize mb-[8px]">
+        blog & update
+      </p>
+      <div class="relative">
+        <div class="h-[2px] w-[99.2%] bg-slate-200 mb-[20px] overflow-hidden">
+          <div class="width-animated h-full bg-[#E81C2E]"></div>
+        </div>
+        <div
+          class="circle-opacity bg-[#E81C2E] w-[10px] h-[10px] rounded-full absolute right-0 top-[50%] translate-y-[-50%]">
+        </div>
+      </div>
+      <h1 class="text-[2.5rem] tracking-[2px] leading-[3rem] mb-[40px] capitalize font-semibold w-[50%]">
+        watch our latest news & updates
+      </h1>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+      <div class="group">
+        <div class="h-[350px] overflow-hidden rounded-xl">
+          <img class="rounded-xl h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
+            src="https://cdn.prod.website-files.com/6735b7b8541528187fed2f7b/6735c8809d811f3308013941_blog%20image%20(1)-p-500.webp"
+            alt="">
+        </div>
+        <div class="dms uppercase text-lg text-[#E81C2E] flex gap-2 items-center pt-5 pb-1">
+          <span>28 jul</span>
+          <span class="text-3xl">•</span>
+          <span>post by admin</span>
+        </div>
+        <h3
+          class="text-[26px] font-medium capitalize pb-5 cursor-pointer group-hover:text-[#E81C2E] transition-colors duration-700">
+          The Science Behind the Perfect Car Wash</h3>
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full bg-black cursor-pointer text-white rotate-[-45deg] cursor-pointer group-hover:rotate-0 group-hover:bg-[#E81C2E] transition-all duration-700">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z" />
+          </svg>
+        </div>
+      </div>
+      <div class="group">
+        <div class="h-[350px] overflow-hidden rounded-xl">
+          <img class="rounded-xl h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
+            src="https://cdn.prod.website-files.com/6735b7b8541528187fed2f7b/6735c88cda16cd20ca8ccf78_blog%20image%20(2)-p-500.webp"
+            alt="">
+        </div>
+        <div class="dms uppercase text-lg text-[#E81C2E] flex gap-2 items-center pt-5 pb-1">
+          <span>28 jul</span>
+          <span class="text-3xl">•</span>
+          <span>post by admin</span>
+        </div>
+        <h3
+          class="text-[26px] font-medium capitalize pb-5 cursor-pointer group-hover:text-[#E81C2E] transition-colors duration-700">
+          Car Wash Services You Didn’t Know Needed</h3>
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full bg-black cursor-pointer text-white rotate-[-45deg] cursor-pointer group-hover:rotate-0 group-hover:bg-[#E81C2E] transition-all duration-700">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z" />
+          </svg>
+        </div>
+      </div>
+      <div class="group">
+        <div class="h-[350px] overflow-hidden rounded-xl">
+          <img class="rounded-xl h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
+            src="https://cdn.prod.website-files.com/6735b7b8541528187fed2f7b/6735c8b191023107488094de_blog%20image%20(3)-p-500.webp"
+            alt="">
+        </div>
+        <div class="dms uppercase text-lg text-[#E81C2E] flex gap-2 items-center pt-5 pb-1">
+          <span>28 jul</span>
+          <span class="text-3xl">•</span>
+          <span>post by admin</span>
+        </div>
+        <h3
+          class="text-[26px] font-medium capitalize pb-5 cursor-pointer group-hover:text-[#E81C2E] transition-colors duration-700">
+          Step-by-Step Guide to Hand Washing Your Car
+        </h3>
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full bg-black cursor-pointer text-white rotate-[-45deg] cursor-pointer group-hover:rotate-0 group-hover:bg-[#E81C2E] transition-all duration-700">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z" />
+          </svg>
+        </div>
+      </div>
+  </section>
+
+  <!-- Location -->
+  <section class="px-4 mt-32">
+    <div>
+      <p class="text-[#E81C2E] text-[1.2rem] capitalize mb-[8px]">
+        location
+      </p>
+      <div class="relative">
+        <div class="h-[2px] w-[99.2%] bg-slate-200 mb-[20px] overflow-hidden">
+          <div class="width-animated h-full bg-[#E81C2E]"></div>
+        </div>
+        <div
+          class="circle-opacity bg-[#E81C2E] w-[10px] h-[10px] rounded-full absolute right-0 top-[50%] translate-y-[-50%]">
+        </div>
+      </div>
+      <h1 class="text-[2.5rem] tracking-[2px] leading-[3rem] mb-[40px] capitalize font-semibold">
+        car washing & car point
+      </h1>
+    </div>
+
+    <div class="flex gap-5 justify-center">
+      <div class="w-[50%]">
+        <h3 class="capitalize text-4xl font-medium">get in tuch</h3>
+        <p class="dms text-lg text-[#666666] pt-5 pb-4 w-[95%]">It is a long established fact that a reader will be
+          distracted of a page when looking at its layout. The point of usingmore-or-less.</p>
+        <p class="text-xl font-medium pb-5">+ (020) 857 1234</p>
+        <div class="flex gap-3">
+          <div class="w-[50px] h-[50px] rounded-full bg-[#E81C2E] grid place-items-center text-xl text-white">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="w-[50px] h-[50px] rounded-full bg-[#E81C2E] grid place-items-center text-xl text-white">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="w-[50px] h-[50px] rounded-full bg-[#E81C2E] grid place-items-center text-xl text-white">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <form class="w-[50%] grid grid-cols-2 gap-12 dms text-[#666666]">
+        <div class="text-base border-b pb-4">
+          <i class="fa-regular fa-user text-xl"></i>
+          <input class="border-none outline-none pl-3" type="text" placeholder="Name">
+        </div>
+        <div class="text-base border-b pb-4">
+          <i class="fa-regular fa-envelope text-xl"></i>
+          <input class="border-none outline-none pl-3" type="text" placeholder="Email">
+        </div>
+        <div class="text-base border-b pb-4">
+          <i class="fa-solid fa-mobile-screen-button text-xl"></i>
+          <input class="border-none outline-none pl-3" type="text" placeholder="Phone">
+        </div>
+        <div class="text-base border-b pb-4">
+          <i class="fa-regular fa-file text-xl"></i>
+          <input class="border-none outline-none pl-3" type="text" placeholder="Subject">
+        </div>
+        <div class="flex col-span-2 border-b hover:border-[#E81C2E] transition-colors duration-700">
+          <div class="h-fit">
+            <i class="fa-regular fa-note-sticky text-xl"></i>
+          </div>
+          <textarea class="border-none outline-none pl-3" name="#" id="#" placeholder="How Can I Help You?" rows="5"
+            cols="100%"></textarea>
+        </div>
+        <button
+          class="tran-before2 relative overflow-hidden font-medium text-[1rem] text-neutral-50 uppercase bg-black px-[20px] py-[15px] rounded-full w-[120px]">
+          <p class="relative z-50">Submit</p>
+        </button>
+      </form>
+      <div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Elevate Your Car’s Look with a Fresh Wash -->
+  <footer class="px-4 mt-32 bg-[#18171A] pt-24 text-white">
+    <h1 class="text-5xl tracking-[2px] leading-[3rem] mb-[40px] capitalize font-semibold w-[80%]">Elevate Your Car’s
+      Look with a Fresh Wash</h1>
+    <div class="grid grid-cols-4 justify-center pt-12">
+      <div class="border-r border-b border-[#292928] pr-[45px] pb-[45px]">
+        <h3 class="text-xl font-semibold">Address</h3>
+        <div class="h-[2px] w-[85px] bg-[#E81C2E] mt-2"></div>
+        <p class="font-semibold pt-7">1353 locust st, kansas city mo 6452 berline 81566</p>
+        <div class="pt-4 hover:text-[#E81C2E] transition-colors duration-700">
+          <a class="underline font-semibold" href="example@gmail.com">example@gmail.com</a>
+        </div>
+        <div class="pt-2 hover:text-[#E81C2E] transition-colors duration-700">
+          <a class="font-semibold" href="tel:+1800-123-1234">+1800-123-1234</a>
+        </div>
+      </div>
+      <div class="border-r border-b border-[#292928] px-[60px] pb-[45px]">
+        <h3 class="text-xl font-semibold">Navigation</h3>
+        <div class="h-[2px] w-[85px] bg-[#E81C2E] mt-2"></div>
+        <ul class="capitalize font-semibold mt-7 flex flex-col gap-3">
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">style guide</a></li>
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">license</a></li>
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">about us</a></li>
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">contact us</a></li>
+        </ul>
+      </div>
+      <div class="border-r border-b border-[#292928] px-[60px] pb-[45px]">
+        <h3 class="text-xl font-semibold">Social Media</h3>
+        <div class="h-[2px] w-[85px] bg-[#E81C2E] mt-2"></div>
+        <ul class="capitalize font-semibold mt-7 flex flex-col gap-3">
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">facebook</a></li>
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">YouTube</a></li>
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">dribble</a></li>
+          <li class="hover:text-[#E81C2E] transition-colors duration-700 w-fit"><a href="#">instagram</a></li>
+        </ul>
+      </div>
+      <div class="border-b border-[#292928] pl-[45px] pb-[30px]">
+        <h3 class="text-xl font-semibold">Social Media</h3>
+        <div class="h-[2px] w-[85px] bg-[#E81C2E] mt-2"></div>
+        <form action="#" class="flex flex-col gap-7 pt-10">
+          <div
+            class="text-base border-b border-[#292928] pb-4 flex hover:border-[#E81C2E] transition-colors duration-700">
+            <i class="fa-regular fa-envelope text-2xl"></i>
+            <input class="border-none outline-none pl-3 bg-transparent dms placeholder:text-[#666666] w-full"
+              type="text" placeholder="Enter Your Email">
+          </div>
+          <div class="flex items-center gap-3">
+            <input class="accent-[#E81C2E]" type="checkbox" id="agree">
+            <label class="select-none" for="agree">I Agree <a
+                class="underline hover:text-[#E81C2E] transition-colors duration-700" href="#">Privacy
+                Policy</a></label>
+          </div>
+          <button
+            class="tran-before relative overflow-hidden font-medium text-[1rem] text-neutral-50 uppercase bg-white px-[20px] py-[15px] rounded-full w-[120px]">
+            <p class="relative z-50">Submit</p>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="px-4 bg-[#18171A] py-6 text-white text-center">
+    <p>&copy; Powered by Webflow created by heinWeb</p>
+    <p>Credits to Webflow.io</p>
+  </footer>
+  
 </body>
 
 </html>
